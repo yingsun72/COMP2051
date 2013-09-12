@@ -1,29 +1,22 @@
-<!Create a program that asks the user for name, get date&time
+<!Create a program that asks the user for two numbers and then return the sum
+paseInt()
+parseFloat()
+
 -->
 <html>
 <head>
 	<meta charset = "utf-8">
 	<title>The is the addition application</title>
 		<script type="text/javascript">
-		  var name;
-		  var now = new Date();
-		  var hour = now.getHours();
-		  name = window.prompt("Please enter your name:", "");
-		  //determine whether it is currently morning
-		  if (hour < 12)
-		  document.writeln("<h1>Hello " + name +" Good morning!</h1>");
-		  if (hour >= 12)
-		  {
-		  //convert to 12-hour clock
-		  hour = hour - 12;
-		  //determine whether it is before 6pm
-		  if (hour < 6)
-		    document.writeln("<h1>Hello " + name +" Good afternoon!</h1>");
-		  //determine whether it is after 6pm
-		  if (hour >= 6)
-		    document.writeln("<h1>Hello " + name +" Good evening!</h1>");
-          }   	
-          document.writeln("<h1>Welcome to class!</h1>");		  
+		  var num1, num2;
+		  var entry1, entry2;
+		  var sum;
+		  entry1 = prompt("Please enter your 1st number:","");
+		  entry2 = prompt("Please enter your 2nd number:","");
+		  num1 = parseFloat(entry1)
+		  num2 = parseFloat(entry2)
+		  sum = num1 + num2
+		  document.writeln("<h1>Result is " + sum +"</h1>")
 		</script>
 	</head>
 <body>
