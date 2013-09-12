@@ -1,14 +1,34 @@
+<!/*create program to ask the user for their name..
+/*then give the user a greeting..
+
+/*Classical CS approach
+/*1 declare or define - Instantiate
+/*2 Act - process
+/*3 Out or Close
+
+/*declare name variable
+/*declare aga variable
+/*input name
+/*input aga
+/*do something...
+/*return results..-->
+
 <html>
 <head>
 	<meta charset = "utf-8">
-	<title>The is our Hello</title>
-	<script type="text/javascript">
-	   <!-- to write out hello world-->
-     document.writeln("<h1>Hello World!</h1>")
-	 alert("Hello World!") /*comments
+	<title>The is Entry Screen</title>
+		<script>
+function disp_prompt()
+  {
+  var fname=prompt("Please enter your name:","Your name")
+  document.getElementById("msg").innerHTML="Greetings " + fname
+  }
     </script>
 	</head>
 <body>
-	   <!-- there is nothing in the body section-->
+<input type="button" onclick="disp_prompt()" value="Display a prompt box">
+<br><br>
+
+<div id="msg"></div>
 </body>
 </html>
